@@ -9,6 +9,14 @@
     },
     {
         id: 39,
+        name: "Apple Butter",
+        category: "butter",
+        price: 8.99,
+        image: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400",
+        description: "Classic smooth apple butter - 19 OZ"
+    },
+    {
+        id: 40,
         name: "Pecan Apple Butter",
         category: "butter",
         price: 10.99,
@@ -16,7 +24,7 @@
         description: "Contains 576 Pecans - 19 OZ"
     },
     {
-        id: 40,
+        id: 41,
         name: "Peach Butter",
         category: "butter",
         price: 9.49,
