@@ -1,15 +1,54 @@
 // Product Data
 const products = [
+    // Butter
     {
         id: 1,
-        name: "Strawberry Preserves",
-        category: "jams",
+        name: "Homemade Apple Butter",
+        category: "butter",
         price: 8.99,
-        image: "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400",
-        description: "Sweet and delicious strawberry preserves made with fresh berries"
+        image: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400",
+        description: "Smooth and spiced apple butter, slow-cooked to perfection"
     },
     {
         id: 2,
+        name: "Pumpkin Butter",
+        category: "butter",
+        price: 9.49,
+        image: "https://images.unsplash.com/photo-1509005084666-3cbc75184cbb?w=400",
+        description: "Seasonal pumpkin butter with warm spices"
+    },
+    
+    // Fruit
+    {
+        id: 3,
+        name: "Mixed Fruit Preserves",
+        category: "fruit",
+        price: 9.99,
+        image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400",
+        description: "Delicious blend of seasonal fruits preserved at peak ripeness"
+    },
+    
+    // Garlic
+    {
+        id: 4,
+        name: "Roasted Garlic Spread",
+        category: "garlic",
+        price: 7.99,
+        image: "https://images.unsplash.com/photo-1553024535-5e8a4e9e3af5?w=400",
+        description: "Rich roasted garlic spread perfect for bread or cooking"
+    },
+    
+    // Jams
+    {
+        id: 5,
+        name: "Strawberry Jam",
+        category: "jams",
+        price: 8.99,
+        image: "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400",
+        description: "Sweet and delicious strawberry jam made with fresh berries"
+    },
+    {
+        id: 6,
         name: "Blueberry Jam",
         category: "jams",
         price: 8.99,
@@ -17,15 +56,7 @@ const products = [
         description: "Rich blueberry jam bursting with flavor"
     },
     {
-        id: 3,
-        name: "Peach Preserves",
-        category: "jams",
-        price: 9.49,
-        image: "https://images.unsplash.com/photo-1629828874514-944d8c4e2c1b?w=400",
-        description: "Summer peaches preserved to perfection"
-    },
-    {
-        id: 4,
+        id: 7,
         name: "Raspberry Jam",
         category: "jams",
         price: 9.99,
@@ -33,92 +64,276 @@ const products = [
         description: "Tart and sweet raspberry jam with whole berries"
     },
     {
-        id: 5,
-        name: "Homemade Apple Pie",
-        category: "baked",
-        price: 18.99,
-        image: "https://images.unsplash.com/photo-1535920527002-b35e96722eb9?w=400",
-        description: "Classic apple pie with a flaky, buttery crust"
-    },
-    {
-        id: 6,
-        name: "Chocolate Chip Cookies (Dozen)",
-        category: "baked",
-        price: 12.99,
-        image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400",
-        description: "Soft and chewy cookies loaded with chocolate chips"
-    },
-    {
-        id: 7,
-        name: "Banana Bread",
-        category: "baked",
-        price: 10.99,
-        image: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=400",
-        description: "Moist banana bread with a hint of cinnamon"
-    },
-    {
         id: 8,
-        name: "Cinnamon Rolls (6-pack)",
-        category: "baked",
-        price: 14.99,
-        image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400",
-        description: "Fresh-baked cinnamon rolls with cream cheese frosting"
+        name: "Peach Jam",
+        category: "jams",
+        price: 9.49,
+        image: "https://images.unsplash.com/photo-1629828874514-944d8c4e2c1b?w=400",
+        description: "Summer peaches preserved to perfection"
     },
+    
+    // Ketchup
     {
         id: 9,
+        name: "Homemade Tomato Ketchup",
+        category: "ketchup",
+        price: 7.49,
+        image: "https://images.unsplash.com/photo-1598166615297-bbcbc10e6d1b?w=400",
+        description: "Classic ketchup made from fresh tomatoes, no preservatives"
+    },
+    
+    // Misc
+    {
+        id: 10,
+        name: "Honey",
+        category: "misc",
+        price: 12.99,
+        image: "https://images.unsplash.com/photo-1587049352846-4a222e784acc?w=400",
+        description: "Pure local honey from nearby farms"
+    },
+    
+    // Nuts
+    {
+        id: 11,
+        name: "Candied Pecans",
+        category: "nuts",
+        price: 10.99,
+        image: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=400",
+        description: "Sweet and crunchy candied pecans"
+    },
+    {
+        id: 12,
+        name: "Spiced Almonds",
+        category: "nuts",
+        price: 11.49,
+        image: "https://images.unsplash.com/photo-1508747703725-719777637510?w=400",
+        description: "Roasted almonds with secret spice blend"
+    },
+    
+    // Olives
+    {
+        id: 13,
+        name: "Marinated Olives",
+        category: "olives",
+        price: 9.99,
+        image: "https://images.unsplash.com/photo-1452847121524-3d3141b4e8f4?w=400",
+        description: "Mediterranean olives in herb-infused oil"
+    },
+    
+    // Pasta Sauce
+    {
+        id: 14,
+        name: "Marinara Sauce",
+        category: "pasta sauce",
+        price: 8.99,
+        image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400",
+        description: "Classic Italian marinara with fresh herbs"
+    },
+    {
+        id: 15,
+        name: "Roasted Garlic Tomato Sauce",
+        category: "pasta sauce",
+        price: 9.49,
+        image: "https://images.unsplash.com/photo-1604909052743-94e838986d24?w=400",
+        description: "Rich tomato sauce with roasted garlic"
+    },
+    
+    // Pickles
+    {
+        id: 16,
+        name: "Dill Pickles",
+        category: "pickles",
+        price: 7.99,
+        image: "https://images.unsplash.com/photo-1589621316382-008455b857cd?w=400",
+        description: "Crispy dill pickles with garlic and herbs"
+    },
+    {
+        id: 17,
+        name: "Bread & Butter Pickles",
+        category: "pickles",
+        price: 7.99,
+        image: "https://images.unsplash.com/photo-1548690596-b8b4329c0dcc?w=400",
+        description: "Sweet and tangy bread & butter pickles"
+    },
+    {
+        id: 18,
+        name: "Spicy Pickle Spears",
+        category: "pickles",
+        price: 8.49,
+        image: "https://images.unsplash.com/photo-1589621316382-008455b857cd?w=400",
+        description: "Hot and spicy pickle spears with jalapeños"
+    },
+    
+    // Quail Eggs
+    {
+        id: 19,
+        name: "Pickled Quail Eggs",
+        category: "quail eggs",
+        price: 11.99,
+        image: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400",
+        description: "Delicate pickled quail eggs"
+    },
+    
+    // Queso
+    {
+        id: 20,
+        name: "Jalapeño Queso Dip",
+        category: "queso",
+        price: 9.99,
+        image: "https://images.unsplash.com/photo-1559561853-08451507cbe7?w=400",
+        description: "Creamy cheese dip with jalapeños"
+    },
+    
+    // Relish
+    {
+        id: 21,
+        name: "Sweet Pickle Relish",
+        category: "relish",
+        price: 6.99,
+        image: "https://images.unsplash.com/photo-1571490843194-2f59d64e5dc7?w=400",
+        description: "Classic sweet pickle relish for hot dogs and burgers"
+    },
+    {
+        id: 22,
+        name: "Corn Relish",
+        category: "relish",
+        price: 7.49,
+        image: "https://images.unsplash.com/photo-1551462147-37ec033a2dd5?w=400",
+        description: "Sweet corn relish with peppers"
+    },
+    
+    // Salad Dressings
+    {
+        id: 23,
+        name: "Ranch Dressing",
+        category: "salad dressings",
+        price: 7.99,
+        image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
+        description: "Creamy homemade ranch dressing"
+    },
+    {
+        id: 24,
+        name: "Balsamic Vinaigrette",
+        category: "salad dressings",
+        price: 8.49,
+        image: "https://images.unsplash.com/photo-1604909052429-e136f8b0877b?w=400",
+        description: "Tangy balsamic vinaigrette with herbs"
+    },
+    
+    // Salsa
+    {
+        id: 25,
+        name: "Mild Salsa",
+        category: "salsa",
+        price: 7.99,
+        image: "https://images.unsplash.com/photo-1599270656720-ae4d1380aab8?w=400",
+        description: "Fresh tomato salsa, mild heat"
+    },
+    {
+        id: 26,
+        name: "Hot Salsa",
+        category: "salsa",
+        price: 7.99,
+        image: "https://images.unsplash.com/photo-1527976746453-f4a26f5b2c37?w=400",
+        description: "Spicy salsa with habanero peppers"
+    },
+    {
+        id: 27,
+        name: "Peach Salsa",
+        category: "salsa",
+        price: 8.49,
+        image: "https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=400",
+        description: "Sweet peach salsa with a hint of heat"
+    },
+    
+    // Sauces
+    {
+        id: 28,
         name: "BBQ Sauce",
         category: "sauces",
-        price: 7.99,
+        price: 8.99,
         image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=400",
         description: "Smoky and tangy BBQ sauce perfect for grilling"
     },
     {
-        id: 10,
-        name: "Hot Pepper Jelly",
+        id: 29,
+        name: "Hot Sauce",
         category: "sauces",
-        price: 8.49,
+        price: 7.99,
         image: "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?w=400",
-        description: "Sweet heat with a kick - perfect with cheese"
+        description: "Fiery hot sauce made with fresh peppers"
     },
     {
-        id: 11,
-        name: "Pickled Vegetables",
+        id: 30,
+        name: "Sweet Chili Sauce",
         category: "sauces",
+        price: 8.49,
+        image: "https://images.unsplash.com/photo-1472476443507-c7a5948772fc?w=400",
+        description: "Asian-inspired sweet and spicy chili sauce"
+    },
+    
+    // Sauerkraut
+    {
+        id: 31,
+        name: "Traditional Sauerkraut",
+        category: "sauerkraut",
+        price: 7.99,
+        image: "https://images.unsplash.com/photo-1621947081720-86970823b77e?w=400",
+        description: "Fermented sauerkraut, traditional recipe"
+    },
+    
+    // Seasoning
+    {
+        id: 32,
+        name: "All-Purpose Seasoning Blend",
+        category: "seasoning",
+        price: 6.99,
+        image: "https://images.unsplash.com/photo-1596040033229-a0b8f7b6e56c?w=400",
+        description: "Versatile seasoning blend for any dish"
+    },
+    {
+        id: 33,
+        name: "Cajun Spice Mix",
+        category: "seasoning",
+        price: 7.49,
+        image: "https://images.unsplash.com/photo-1599909533003-d0480d5f0632?w=400",
+        description: "Bold Cajun spice blend with heat"
+    },
+    
+    // Syrup
+    {
+        id: 34,
+        name: "Blueberry Syrup",
+        category: "syrup",
+        price: 10.99,
+        image: "https://images.unsplash.com/photo-1551218372-8c9e61a9e060?w=400",
+        description: "Pure blueberry syrup for pancakes and waffles"
+    },
+    {
+        id: 35,
+        name: "Maple Syrup",
+        category: "syrup",
+        price: 12.99,
+        image: "https://images.unsplash.com/photo-1582450267616-254ad22fc3ba?w=400",
+        description: "Pure maple syrup, Grade A"
+    },
+    
+    // Veggies
+    {
+        id: 36,
+        name: "Pickled Vegetables",
+        category: "veggies",
         price: 9.99,
         image: "https://images.unsplash.com/photo-1548690596-b8b4329c0dcc?w=400",
         description: "Crisp pickled vegetables with herbs and spices"
     },
     {
-        id: 12,
-        name: "Pumpkin Pie",
-        category: "seasonal",
-        price: 16.99,
-        image: "https://images.unsplash.com/photo-1571722008286-d2f8c281f649?w=400",
-        description: "Seasonal favorite - creamy pumpkin pie with spices"
-    },
-    {
-        id: 13,
-        name: "Holiday Gift Basket",
-        category: "seasonal",
-        price: 45.99,
-        image: "https://images.unsplash.com/photo-1544913657-71662d9e9a7d?w=400",
-        description: "Assorted jams, baked goods, and treats in a beautiful basket"
-    },
-    {
-        id: 14,
-        name: "Apple Butter",
-        category: "jams",
-        price: 7.99,
-        image: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400",
-        description: "Smooth and spiced apple butter, slow-cooked to perfection"
-    },
-    {
-        id: 15,
-        name: "Sourdough Bread",
-        category: "baked",
-        price: 8.99,
-        image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400",
-        description: "Traditional sourdough with a perfect crust"
+        id: 37,
+        name: "Canned Green Beans",
+        category: "veggies",
+        price: 6.99,
+        image: "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=400",
+        description: "Fresh green beans canned at peak freshness"
     }
 ];
 
@@ -180,10 +395,26 @@ function createProductCard(product) {
 // Get Category Name
 function getCategoryName(category) {
     const names = {
-        'jams': 'Jams & Preserves',
-        'baked': 'Baked Goods',
-        'sauces': 'Sauces & Condiments',
-        'seasonal': 'Seasonal Specials'
+        'butter': 'Butter',
+        'fruit': 'Fruit',
+        'garlic': 'Garlic',
+        'jams': 'Jams',
+        'ketchup': 'Ketchup',
+        'misc': 'Miscellaneous',
+        'nuts': 'Nuts',
+        'olives': 'Olives',
+        'pasta sauce': 'Pasta Sauce',
+        'pickles': 'Pickles',
+        'quail eggs': 'Quail Eggs',
+        'queso': 'Queso',
+        'relish': 'Relish',
+        'salad dressings': 'Salad Dressings',
+        'salsa': 'Salsa',
+        'sauces': 'Sauces',
+        'sauerkraut': 'Sauerkraut',
+        'seasoning': 'Seasoning',
+        'syrup': 'Syrup',
+        'veggies': 'Veggies'
     };
     return names[category] || category;
 }
@@ -258,241 +489,3 @@ function updateCartUI() {
     });
     
     cartTotal.textContent = `$${total.toFixed(2)}`;
-    
-    // Setup cart item controls
-    document.querySelectorAll('.quantity-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const id = parseInt(e.target.getAttribute('data-id'));
-            const action = e.target.getAttribute('data-action');
-            updateQuantity(id, action);
-        });
-    });
-    
-    document.querySelectorAll('.remove-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const id = parseInt(e.target.getAttribute('data-id'));
-            removeFromCart(id);
-        });
-    });
-}
-
-// Update Quantity
-function updateQuantity(id, action) {
-    const item = cart.find(item => item.id === id);
-    if (!item) return;
-    
-    if (action === 'increase') {
-        item.quantity++;
-    } else if (action === 'decrease') {
-        item.quantity--;
-        if (item.quantity === 0) {
-            removeFromCart(id);
-            return;
-        }
-    }
-    
-    updateCartUI();
-    saveCartToStorage();
-}
-
-// Remove from Cart
-function removeFromCart(id) {
-    cart = cart.filter(item => item.id !== id);
-    updateCartUI();
-    saveCartToStorage();
-}
-
-// Setup Cart Modal
-function setupCart() {
-    const cartBtn = document.getElementById('cartBtn');
-    const cartModal = document.getElementById('cartModal');
-    const closeCartBtn = document.getElementById('closeCartBtn');
-    
-    cartBtn.addEventListener('click', () => {
-        cartModal.classList.add('active');
-        updateCartUI();
-    });
-    
-    closeCartBtn.addEventListener('click', () => {
-        cartModal.classList.remove('active');
-    });
-    
-    cartModal.addEventListener('click', (e) => {
-        if (e.target === cartModal) {
-            cartModal.classList.remove('active');
-        }
-    });
-}
-
-// Setup Modals
-function setupModals() {
-    const checkoutBtn = document.getElementById('checkoutBtn');
-    const checkoutModal = document.getElementById('checkoutModal');
-    const closeCheckoutBtn = document.getElementById('closeCheckoutBtn');
-    const cartModal = document.getElementById('cartModal');
-    
-    checkoutBtn.addEventListener('click', () => {
-        if (cart.length === 0) {
-            showNotification('Your cart is empty!');
-            return;
-        }
-        cartModal.classList.remove('active');
-        checkoutModal.classList.add('active');
-        updateCheckoutSummary();
-    });
-    
-    closeCheckoutBtn.addEventListener('click', () => {
-        checkoutModal.classList.remove('active');
-    });
-    
-    checkoutModal.addEventListener('click', (e) => {
-        if (e.target === checkoutModal) {
-            checkoutModal.classList.remove('active');
-        }
-    });
-}
-
-// Update Checkout Summary
-function updateCheckoutSummary() {
-    const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    const shipping = 5.99;
-    const tax = subtotal * 0.08;
-    const total = subtotal + shipping + tax;
-    
-    document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
-    document.getElementById('shipping').textContent = `$${shipping.toFixed(2)}`;
-    document.getElementById('tax').textContent = `$${tax.toFixed(2)}`;
-    document.getElementById('finalTotal').textContent = `$${total.toFixed(2)}`;
-}
-
-// Setup Forms
-function setupForms() {
-    const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        showNotification('Thank you for your message! We\'ll get back to you soon.');
-        contactForm.reset();
-    });
-    
-    const checkoutForm = document.getElementById('checkoutForm');
-    checkoutForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        processOrder();
-    });
-}
-
-// Process Order
-function processOrder() {
-    // In a real application, this would send the order to a server
-    showNotification('Order placed successfully! Thank you for your purchase.');
-    cart = [];
-    updateCartUI();
-    saveCartToStorage();
-    document.getElementById('checkoutModal').classList.remove('active');
-    document.getElementById('checkoutForm').reset();
-}
-
-// Show Notification
-function showNotification(message) {
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.style.cssText = `
-        position: fixed;
-        top: 100px;
-        right: 20px;
-        background-color: #2F5233;
-        color: white;
-        padding: 1rem 1.5rem;
-        border-radius: 5px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-        z-index: 3000;
-        animation: slideIn 0.3s ease-out;
-    `;
-    notification.textContent = message;
-    
-    document.body.appendChild(notification);
-    
-    setTimeout(() => {
-        notification.style.animation = 'slideOut 0.3s ease-out';
-        setTimeout(() => notification.remove(), 300);
-    }, 3000);
-}
-
-// Add animation styles
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideIn {
-        from {
-            transform: translateX(400px);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    @keyframes slideOut {
-        from {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(400px);
-            opacity: 0;
-        }
-    }
-`;
-document.head.appendChild(style);
-
-// Setup Navigation
-function setupNavigation() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            if (link.getAttribute('href').startsWith('#')) {
-                e.preventDefault();
-                const target = document.querySelector(link.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    link.classList.add('active');
-                }
-            }
-        });
-    });
-    
-    // Highlight active section on scroll
-    window.addEventListener('scroll', () => {
-        let current = '';
-        const sections = document.querySelectorAll('section[id]');
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.pageYOffset >= sectionTop - 100) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
-    });
-}
-
-// Local Storage Functions
-function saveCartToStorage() {
-    localStorage.setItem('katiebugs-cart', JSON.stringify(cart));
-}
-
-function loadCartFromStorage() {
-    const savedCart = localStorage.getItem('katiebugs-cart');
-    if (savedCart) {
-        cart = JSON.parse(savedCart);
-        updateCartUI();
-    }
-}
