@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #8B4513;
+  --secondary-color: #CD853F;
+  --accent-color: #D32F2F;
+  --dark-green: #2F5233;
+  --light-green: #8FAA8E;
+  --cream: #FFF8DC;
+}
+
+body {
+  background-color: var(--cream);
+  font-family: Georgia, 'Times New Roman', serif;
+}
