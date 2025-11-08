@@ -1,0 +1,25 @@
+    },
+    {
+        id: 38,
+        name: "Monkey Butter",
+        category: "butter",
+        price: 9.99,
+        image: "https://images.unsplash.com/photo-1587132117825-84eec8e00d5f?w=400",
+        description: "Banana Pineapple Mango - 19 OZ"
+    },
+    {
+        id: 39,
+        name: "Pecan Apple Butter",
+        category: "butter",
+        price: 10.99,
+        image: "https://images.unsplash.com/photo-1599909533003-d0480d5f0632?w=400",
+        description: "Contains 576 Pecans - 19 OZ"
+    },
+    {
+        id: 40,
+        name: "Peach Butter",
+        category: "butter",
+        price: 9.49,
+        image: "https://images.unsplash.com/photo-1628689469838-524a4a973b8e?w=400",
+        description: "Sweet Peach Butter - 19 OZ"
+    },
