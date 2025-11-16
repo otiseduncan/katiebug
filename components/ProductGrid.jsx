@@ -1,10 +1,9 @@
 import React from 'react';
 
+// Images served from the `public` folder. Spaces and apostrophes in folder names are URL-encoded.
 const products = [
-  { id: 1, name: 'Product 1', price: '$10', image: 'https://via.placeholder.com/150' },
-  { id: 2, name: 'Product 2', price: '$20', image: 'https://via.placeholder.com/150' },
-  { id: 3, name: 'Product 3', price: '$30', image: 'https://via.placeholder.com/150' },
-  { id: 4, name: 'Product 4', price: '$40', image: 'https://via.placeholder.com/150' },
+  { id: 1, name: 'Butter 20240521', price: '$10', image: "/Katie%20Bug%27s/butter/20240521_130607.jpg" },
+  // ...add more images here as you place them in `public/Katie Bug's/...`
 ];
 
 export default function ProductGrid() {
@@ -15,7 +14,7 @@ export default function ProductGrid() {
           <figure><img src={product.image} alt={product.name} /></figure>
           <div className="card-body">
             <h2 className="card-title">{product.name}</h2>
-            <p>{product.price}</p>
+            {product.price && <p>{product.price}</p>}
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Buy Now</button>
             </div>
